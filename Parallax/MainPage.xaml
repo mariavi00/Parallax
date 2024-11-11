@@ -58,6 +58,13 @@
                 HorizontalOptions="Fill"
                 HeightRequest="150"/>
         </HorizontalStackLayout>
+
+        <Image x:Name="imgplayer"
+             Source="andar01.png"
+             HeightRequest="200"
+             WidthRequest="180"
+             VerticalOptions="End"
+             HorizontalOptions="Start"/>
     </Grid>
 
 </ContentPage>
