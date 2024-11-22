@@ -33,10 +33,10 @@ public partial class MainPage : ContentPage
 		CorrigeTamanhoCenario(w, h);
 		CalculaVelocidade(w);
 		inimigos = new Inimigos(-w);
-		inimigos.Add(new Inimigo(imgInimigo1));
-		inimigos.Add(new Inimigo(imgInimigo2));
-		inimigos.Add(new Inimigo(imgInimigo3));
-		inimigos.Add(new Inimigo(imgInimigo4));
+		inimigos.Add(new Inimigo(cacto));
+		inimigos.Add(new Inimigo(gamba));
+		inimigos.Add(new Inimigo(pedra));
+		inimigos.Add(new Inimigo(cobra));
 	}
 	void CalculaVelocidade(double w)
 	{
@@ -91,7 +91,7 @@ public partial class MainPage : ContentPage
 		while (!estaMorto)
 		{
 			GerenciaCenarios();
-			if (inimigos != nuul)
+			if (inimigos != null)
 				inimigos.Desenha(velocidade);
 			if (!estaPulando && !estaNoAr)
 			{

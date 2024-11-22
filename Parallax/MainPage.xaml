@@ -6,71 +6,95 @@
              Shell.NavBarIsVisible="False"
              BackgroundColor="Black">
 
-    <Grid>
-        <Grid.GestureRecognizers>
-            <TapGestureRecognizer Tapped="OnGridTapped"/>
-        </Grid.GestureRecognizers>
-        <HorizontalStackLayout x:Name="HSLayer1">
-            <Image Source="estrelas.png"
-                   Aspect="Fill"
-                   VerticalOptions="Fill"/>
-            <Image Source="estrelas.png"
-                   Aspect="Fill"
-                   VerticalOptions="Fill"/>
-            <Image Source="estrelas.png"
-                   Aspect="Fill"
-                   VerticalOptions="Fill"/>
-        </HorizontalStackLayout>
+       <Grid>
+              <Grid.GestureRecognizers>
+                     <TapGestureRecognizer Tapped="OnGridTapped"/>
+              </Grid.GestureRecognizers>
+              <HorizontalStackLayout x:Name="HSLayer1">
+                     <Image Source="estrelas.png"
+                            Aspect="Fill"
+                            VerticalOptions="Fill"/>
+                     <Image Source="estrelas.png"
+                            Aspect="Fill"
+                            VerticalOptions="Fill"/>
+                     <Image Source="estrelas.png"
+                            Aspect="Fill"
+                            VerticalOptions="Fill"/>
+              </HorizontalStackLayout>
 
-        <HorizontalStackLayout x:Name="HSLayer2">
-            <Image Source="arvores2.png"
-                   Aspect="Fill"
-                   VerticalOptions="Fill"/>
-            <Image Source="arvores2.png"
-                   Aspect="Fill"
-                   VerticalOptions="Fill"/>
-            <Image Source="arvores2.png"
-                   Aspect="Fill"
-                   VerticalOptions="Fill"/>
-        </HorizontalStackLayout>
+              <HorizontalStackLayout x:Name="HSLayer2">
+                     <Image Source="arvores2.png"
+                            Aspect="Fill"
+                            VerticalOptions="Fill"/>
+                     <Image Source="arvores2.png"
+                            Aspect="Fill"
+                            VerticalOptions="Fill"/>
+                     <Image Source="arvores2.png"
+                            Aspect="Fill"
+                            VerticalOptions="Fill"/>
+              </HorizontalStackLayout>
 
-        <HorizontalStackLayout x:Name="HSLayer3">
-            <Image Source="arvores1.png"
-                   Aspect="Fill"
-                   VerticalOptions="Fill"/>
-            <Image Source="arvores1.png"
-                   Aspect="Fill"
-                   VerticalOptions="Fill"/>
-            <Image Source="arvores1.png"
-                   Aspect="Fill"
-                   VerticalOptions="Fill"/>
-        </HorizontalStackLayout>
+              <HorizontalStackLayout x:Name="HSLayer3">
+                     <Image Source="arvores1.png"
+                            Aspect="Fill"
+                            VerticalOptions="Fill"/>
+                     <Image Source="arvores1.png"
+                            Aspect="Fill"
+                            VerticalOptions="Fill"/>
+                     <Image Source="arvores1.png"
+                            Aspect="Fill"
+                            VerticalOptions="Fill"/>
+              </HorizontalStackLayout>
 
-        <HorizontalStackLayout x:Name="HSLayerChao"
-                               HeightRequest="50"
-                               VerticalOptions="End">
-            <Image Source="chao.jpg"
-                   Aspect="AspectFill"
-                   HorizontalOptions="Fill"
-                   HeightRequest="150"/>
-            <Image Source="chao.jpg"
-                   Aspect="AspectFill"
-                   HorizontalOptions="Fill"
-                   HeightRequest="150"/>
-            <Image Source="chao.jpg"
-                   Aspect="AspectFill"
-                   HorizontalOptions="Fill"
-                   HeightRequest="150"/>
-        </HorizontalStackLayout>
+              <HorizontalStackLayout x:Name="HSLayerChao"
+                                     HeightRequest="50"
+                                     VerticalOptions="End">
+                     <Image Source="chao.jpg"
+                            Aspect="AspectFill"
+                            HorizontalOptions="Fill"
+                            HeightRequest="150"/>
+                     <Image Source="chao.jpg"
+                            Aspect="AspectFill"
+                            HorizontalOptions="Fill"
+                            HeightRequest="150"/>
+                     <Image Source="chao.jpg"
+                            Aspect="AspectFill"
+                            HorizontalOptions="Fill"
+                            HeightRequest="150"/>
+              </HorizontalStackLayout>
 
-        <ff:CachedImageView x:Name="imgplayer"
-                            CacheType="All"
-                            CacheDuration="365"
-                            Source="andar01.png"
-                            HeightRequest="200"
-                            WidthRequest="180"
-                            VerticalOptions="End"
-                            HorizontalOptions="Start"/>
-    </Grid>
+              <ff:CachedImageView x:Name="imgplayer"
+                                  CacheType="All"
+                                  CacheDuration="365"
+                                  Source="andar01.png"
+                                  HeightRequest="200"
+                                  WidthRequest="180"
+                                  VerticalOptions="End"
+                                  HorizontalOptions="Start"/>
+              <Image x:Name="cacto"
+                     Source="cactoinimigo.png"
+                     HeightRequest="200"
+                     WidthRequest="180"
+                     VerticalOptions="End"
+                     HorizontalOptions="End"/>
+              <Image x:Name="gamba"
+                     Source="gambainimigo.png"
+                     HeightRequest="200"
+                     WidthRequest="180"
+                     VerticalOptions="End"
+                     HorizontalOptions="End"/>
+              <Image x:Name="pedra"
+                     Source="pedrainimigo.png"
+                     HeightRequest="200"
+                     WidthRequest="180"
+                     VerticalOptions="End"
+                     HorizontalOptions="End"/>
+              <Image x:Name="cobra"
+                     Source="cobrainimigo.png"
+                     HeightRequest="200"
+                     WidthRequest="180"
+                     VerticalOptions="End"
+                     HorizontalOptions="End"/>
+       </Grid>
 
 </ContentPage>
